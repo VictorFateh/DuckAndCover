@@ -1,19 +1,10 @@
 {
-    "id": "f5bdef8e-6367-4456-bf56-3df0c4ba7c87",
+    "id": "9938cc97-7318-42a3-8194-922089b4112e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_camera",
+    "name": "obj_elevatedPlat_C",
     "eventList": [
-        {
-            "id": "20aff089-6507-46b4-a968-b2060cf362d8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": true,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "f5bdef8e-6367-4456-bf56-3df0c4ba7c87"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
@@ -31,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "73a5178f-8250-4027-8eef-325d63903875",
+    "spriteId": "bf998b79-3d43-4736-b0ee-9e52ea671e0b",
     "visible": true
 }
