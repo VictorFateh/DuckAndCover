@@ -11,7 +11,7 @@
     "bbox_right": 40,
     "bbox_top": 18,
     "bboxmode": 0,
-    "colkind": 1,
+    "colkind": 0,
     "coltolerance": 221,
     "frames": [
         {
@@ -53,14 +53,15 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 9,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 50,
     "xorig": 25,
-    "yorig": 50
+    "yorig": 62
 }
