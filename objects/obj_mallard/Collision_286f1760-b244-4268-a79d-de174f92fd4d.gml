@@ -22,3 +22,13 @@ instance_destroy();
 	gravity = 5;
 }
 
+/// @DnDAction : YoYo Games.Audio.Stop_All_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 4438DB52
+audio_stop_all();
+
+/// @DnDAction : YoYo Games.Rooms.Restart_Room
+/// @DnDVersion : 1
+/// @DnDHash : 2FF975E1
+room_restart();
+
