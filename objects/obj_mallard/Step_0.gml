@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 58C3FC11
-/// @DnDArgument : "code" "//Get the player's input$(13_10)key_right = keyboard_check(ord("D"));$(13_10)key_left = -keyboard_check(ord("A"));$(13_10)key_jump = keyboard_check_pressed(vk_space);$(13_10) $(13_10)//React to inputs$(13_10)move = key_left + key_right;$(13_10)hsp = move * movespeed;$(13_10)if (vsp < 10) vsp += grav;$(13_10) $(13_10)if (place_meeting(x,y+1,obj_grass_1))$(13_10){$(13_10)    vsp = key_jump * -jumpspeed$(13_10)}$(13_10) $(13_10)//Horizontal Collision$(13_10)if (place_meeting(x+hsp,y,obj_grass_1))$(13_10){$(13_10)    while(!place_meeting(x+sign(hsp),y,obj_grass_1))$(13_10)    {$(13_10)        x += sign(hsp);$(13_10)    }$(13_10)    hsp += 0;$(13_10)}$(13_10)x += hsp;$(13_10) $(13_10)//Vertical Collision$(13_10)if (place_meeting(x,y+vsp,obj_grass_1))$(13_10){$(13_10)    while(!place_meeting(x,y+sign(vsp),obj_grass_1))$(13_10)    {$(13_10)        y += sign(vsp);$(13_10)    }$(13_10)    vsp = 0;$(13_10)}$(13_10)y += vsp;$(13_10)$(13_10)if (place_meeting(x,y+1,obj_grass_1))$(13_10){$(13_10)    vsp = key_jump * -jumpspeed$(13_10)}$(13_10)y += vsp;"
+/// @DnDArgument : "code" "//Get the player's input$(13_10)key_right = keyboard_check(ord("D"));$(13_10)key_left = -keyboard_check(ord("A"));$(13_10)key_jump = keyboard_check_pressed(vk_space);$(13_10) $(13_10)//React to inputs$(13_10)move = key_left + key_right;$(13_10)hsp = move * movespeed;$(13_10)if (vsp < 10) vsp += grav;$(13_10) $(13_10)if (place_meeting(x,y+1,obj_wall))$(13_10){$(13_10)    vsp = key_jump * -jumpspeed$(13_10)}$(13_10) $(13_10)//Horizontal Collision$(13_10)if (place_meeting(x+hsp,y,obj_wall))$(13_10){$(13_10)    while(!place_meeting(x+sign(hsp),y,obj_wall))$(13_10)    {$(13_10)        x += sign(hsp);$(13_10)    }$(13_10)    hsp += 0;$(13_10)}$(13_10)x += hsp;$(13_10) $(13_10)//Vertical Collision$(13_10)if (place_meeting(x,y+vsp,obj_wall))$(13_10){$(13_10)    while(!place_meeting(x,y+sign(vsp),obj_wall))$(13_10)    {$(13_10)        y += sign(vsp);$(13_10)    }$(13_10)    vsp = 0;$(13_10)}$(13_10)y += vsp;$(13_10)$(13_10)if (place_meeting(x,y+1,obj_wall))$(13_10){$(13_10)    vsp = key_jump * -jumpspeed$(13_10)}$(13_10)y += vsp;"
 
 {
 	//Get the player's input
@@ -14,15 +14,15 @@ move = key_left + key_right;
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
  
-if (place_meeting(x,y+1,obj_grass_1))
+if (place_meeting(x,y+1,obj_wall))
 {
     vsp = key_jump * -jumpspeed
 }
  
 //Horizontal Collision
-if (place_meeting(x+hsp,y,obj_grass_1))
+if (place_meeting(x+hsp,y,obj_wall))
 {
-    while(!place_meeting(x+sign(hsp),y,obj_grass_1))
+    while(!place_meeting(x+sign(hsp),y,obj_wall))
     {
         x += sign(hsp);
     }
@@ -31,9 +31,9 @@ if (place_meeting(x+hsp,y,obj_grass_1))
 x += hsp;
  
 //Vertical Collision
-if (place_meeting(x,y+vsp,obj_grass_1))
+if (place_meeting(x,y+vsp,obj_wall))
 {
-    while(!place_meeting(x,y+sign(vsp),obj_grass_1))
+    while(!place_meeting(x,y+sign(vsp),obj_wall))
     {
         y += sign(vsp);
     }
@@ -41,7 +41,7 @@ if (place_meeting(x,y+vsp,obj_grass_1))
 }
 y += vsp;
 
-if (place_meeting(x,y+1,obj_grass_1))
+if (place_meeting(x,y+1,obj_wall))
 {
     vsp = key_jump * -jumpspeed
 }

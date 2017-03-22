@@ -1,8 +1,8 @@
 {
-    "id": "a61b61b0-6986-444a-a9f9-97bdd54de9f8",
+    "id": "da846f80-52b4-4a88-8f92-4154b2cee28f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wall",
+    "name": "obj_granite_1",
     "eventList": [
         
     ],
@@ -21,7 +21,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "solid": true,
-    "spriteId": "a99f7917-683c-4164-976e-0c33f20e3aac",
+    "solid": false,
+    "spriteId": "ee3d1fb3-7260-44b0-adbe-55a0b96afae5",
     "visible": true
 }
